@@ -1,0 +1,12 @@
+body {
+    background-color: bisque;
+}
+
+.logo:hover, 
+.logo:focus {
+    color: black;
+}
+
+.logo:active {
+    color: teal;
+}
