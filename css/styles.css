@@ -4,13 +4,19 @@
   --color-accent: #2196f3;
   --font-logo: 'Raleway';
   --color-white: #ffffff;
+  --bcg-dark: #2f303a;
+  --bcg-white: #F5F5F5;
+  --bcg-grey: #F5F4FA;
 }
 
 /* ----------------GLOBAL---------------- */
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
   color: var(--color-black);
+  letter-spacing: 0.03em;
+  background-color: var(--bcg-white);
 }
 
 .list {
@@ -36,7 +42,6 @@ body {
 
 .nav {
   font-weight: 500;
-  font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 }
@@ -67,6 +72,7 @@ body {
   font-size: 16px;
   line-height: calc(30 / 16);
   color: var(--color-white);
+  letter-spacing: 0.06em;
   background: var(--color-accent);
   cursor: pointer;
 }
@@ -75,15 +81,12 @@ body {
 
 .advantage-title {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .advantage-item {
-  font-size: 14px;
+  color: var(--color-grey);
   line-height: 1.7;
-  letter-spacing: 0.03em;
 }
 
 /* -------------PORTFOLIO--------------- */
@@ -93,7 +96,6 @@ body {
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 /* -------------TEAM--------------- */
@@ -102,7 +104,7 @@ body {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
-  letter-spacing: 0.03em;
+  background-color: var(--bcg-grey);
 }
 
 .team-title {
@@ -119,17 +121,13 @@ body {
 }
 
 /* ---------------------FOOTER----------------------- */
-
-.address {
-  background: #2f303a;
-  font-style: normal;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-}
-
-.geopzition-link {
+.footer {
+  background-color: var(--bcg-dark);
   color: var(--color-white);
+}
+.address {
+  font-style: normal;
+  line-height: calc(24 / 14);
 }
 
 .address-link {
@@ -150,13 +148,13 @@ body {
   font-size: 16px;
   line-height: calc(26 / 16);
   text-align: center;
-  letter-spacing: 0.03em;
+  font-family: inherit;
 }
 
 .btn:hover {
-    background-color: var(--color-accent);
-    color: var(--color-white);
-    cursor: pointer;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  cursor: pointer;
 }
 
 .portfolio-list h2 {
@@ -169,8 +167,5 @@ body {
 .portfolio-list p {
   font-size: 16px;
   line-height: calc(30 / 16);
-  letter-spacing: 0.03em;
   color: var(--color-grey);
 }
-
-
